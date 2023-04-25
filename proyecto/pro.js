@@ -1,0 +1,42 @@
+<table>
+        <tr>
+            <th> Fecha </th>
+            <th> Hora apertura toldo </th>
+            <th> Hora cierre toldo </th>
+        </tr>
+        <tr>
+            <td>15-04-2023</td>
+            <td>7:00:am</td>
+            <td>7:00:pm</td>
+        </tr>
+        <tr>
+            <td>04-07-2023</td>
+            <td>7:00:am</td>
+            <td>7:00:pm</td>
+        </tr>
+        <tr>
+            <td>05-10-2023</td>
+            <td>7:00:am</td>
+            <td>7:00:pm</td>
+        </tr>
+        <tr>
+            <td>16-01-2023</td>
+            <td>7:00:am</td>
+            <td>7:00:pm</td>
+        </tr>
+        <tr>
+            <td>07-06-2023</td>
+            <td>7:00:am</td>
+            <td>7:00:pm</td>
+        </tr>
+        <tr>
+            <td>08-04-2023</td>
+            <td>7:00:am</td>
+            <td>7:00:pm</td>
+        </tr>
+        <tr>
+            <td>09-04-2023</td>
+            <td>7:00:am</td>
+            <td>7:00:pm</td>
+        </tr>
+    </table>

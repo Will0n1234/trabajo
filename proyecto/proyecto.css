@@ -1,0 +1,33 @@
+
+        body {
+            background-color: aliceblue;}
+        table {
+            margin-left: 30%;
+            margin-right: 30%;
+            border: 2px double black;
+            text-align: center;
+            margin: 0 auto;
+        }
+ 
+ 
+ p {
+    margin-left: 30%;
+            margin-right: 30%;
+            border: 2px double black;
+        }
+    
+   
+ul {
+            margin-left: 30%;
+            margin-right: 30%;
+            border: 2px double black;
+            background-color: gray;
+}
+ #demo {
+    text-align: right;
+    text-align: top;
+    background-color: blueviolet;
+    padding-top: 0%;
+    margin-top: auto;
+    
+}

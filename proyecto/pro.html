@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kit invernadero</title>
+    <link rel="stylesheet" href="proyecto.css">
+   
+</head>
+
+<body>
+    
+        <table>  <p id="demo"></p>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('demo').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};
+            return i;
+        }
+        startTime();
+        </script>
+        <th><img src="logoproyecto.jpg" alt="texto alternativo" width="150" height="150"></th>
+        <th>
+            <h1>KIT INVERNADERO</h1>
+        </th>
+    </table>
+
+    <table>
+        <tr>
+            <td><button onclick="showHumedad()">Ver mediciones de humedad</button></td>
+            <td><button onclick="showLuminosidad()">Ver mediciones de luminocidad</button></td>
+            <td><button onclick="showEventos()">Ver eventos destacados</button></td>
+        </tr>
+    </table>
+
+    <div id="seccionHumedad">
+        <ul>
+            <h1> <strong> Niveles de humedad </strong> </h1>
+            <li>Hasta el momento se han realizado 9 mediciones.</li><br>
+            <li>La medicion de humedad mas alta registrada es 15.</li><br>
+            <li>La medicion de humedad mas baja registrada es 1.</li><br>
+            <li>La medicion de humedad de humedad promedio registrada es 7,7.</li><br>
+        </ul>
+    </div>
+
+    <div id="seccionLuminosidad">
+        <ul>
+            <h1> <strong> Niveles de luminosidad </strong> </h1>
+            <li>Hasta el momento se han realizado 6 mediciones.</li><br>
+            <li>La medicion de luminosidad mas alta registrada es 20.</li><br>
+            <li>La medicion de luminosidad mas baja registrada es 1.</li><br>
+            <li>La medicion de luminosidad promedio registrada es 8,5.</li><br>
+        </ul>
+    </div>
+
+    <div id="seccionEventos">
+        <ul>
+            <h1> <strong> Eventos </strong> </h1>
+            <li> A la fecha se han detectado 5 eventos.</li><br>
+            <li>Se han detectado 5 eventos de proximidad.</li><br>
+        </ul>
+    </div>
+
+    <script>
+        function showHumedad() {
+            document.getElementById("seccionHumedad").style.display = "block";
+            document.getElementById("seccionLuminosidad").style.display = "none";
+            document.getElementById("seccionEventos").style.display = "none";
+        }
+
+        function showLuminosidad() {
+            document.getElementById("seccionHumedad").style.display = "none";
+            document.getElementById("seccionLuminosidad").style.display = "block";
+            document.getElementById("seccionEventos").style.display = "none";
+        }
+
+        function showEventos() {
+    document.getElementById("seccionHumedad").style.display = "none";
+    document.getElementById("seccionLuminosidad").style.display = "none";
+    document.getElementById("seccionEventos").style.display = "block";
+}
+
